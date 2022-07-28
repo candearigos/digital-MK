@@ -1,9 +1,11 @@
 :root {
-    --main-color:  #4089AD;
+    --main-color:  #1B5C9E;;
     --text-color:#9C80E1;
     --bg-color: #394855;
     --secondary-color:rgb(173, 130, 73);
     --black-color: rgb(255, 255, 255);
+    --azulbrillante: #438eb4;
+
 }
 html{
     overflow-x: hidden;
@@ -16,10 +18,29 @@ html{
     background-color: var(--black-color);
 
 }
-.animado{
-    opacity: 0;
-    transition: all 1s;
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background: linear-gradient(to bottom, #23488F, #43B4AC); */
+    background-color: black;
 }
+/* carousel marcas */
+
+.eael-img-accordion{display:-webkit-box;display:-ms-flexbox;display:flex;height:50vh; filter: grayscale();}.eael-img-accordion.accordion-direction-vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.eael-img-accordion .eael-image-accordion-hover{position:relative;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;text-decoration:none;color:#fff;background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-transition:-webkit-box-flex .1s;transition:-webkit-box-flex .1s;-o-transition:flex .1s;transition:flex .1s;transition:flex .1s, -webkit-box-flex .1s, -ms-flex .1s;overflow:hidden;cursor:pointer}.eael-grow-accordion{-webkit-box-flex:3;-ms-flex:3;flex:3}.eael-img-accordion .overlay{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:0 10px;position:absolute;top:0;right:0;bottom:0;left:0;-webkit-transition:background-color .4s;-o-transition:background-color .4s;transition:background-color .4s;opacity:1;visibility:visible;background:rgba(0,0,0,0)}.eael-img-accordion-horizontal-align-left .overlay{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.eael-img-accordion-horizontal-align-center .overlay{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.eael-img-accordion-horizontal-align-right .overlay{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.eael-img-accordion-vertical-align-top .overlay{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.eael-img-accordion-vertical-align-center .overlay{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.eael-img-accordion-vertical-align-bottom .overlay{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.eael-img-accordion .overlay .overlay-inner{z-index:1}.eael-img-accordion .eael-image-accordion-hover:before{content:"";position:absolute;width:100%;height:100%;z-index:0;top:0px;left:0px;bottom:0px;right:0px;-webkit-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}.eael-img-accordion .eael-image-accordion-hover:before{background-color:rgba(0,0,0,.3)}.eael-img-accordion .eael-image-accordion-hover:hover::before{background-color:rgba(0,0,0,.5)}.eael-img-accordion .overlay-inner *{visibility:hidden;opacity:0;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.eael-img-accordion 
+.overlay h2{color:#fff;font-size:20px;-webkit-transform:translate3d(0, -60px, 0);transform:translate3d(0, -60px, 0)}.eael-img-accordion
+
+ .overlay h1{color:#fff;margin-bottom:0;font-size:30px;-webkit-transform:translate3d(0, 60px, 0);transform:translate3d(0, 60px, 0)}.eael-img-accordion .eael-image-accordion-hover.overlay-active .overlay-inner *,.eael-img-accordion .overlay-inner-show *{opacity:1;visibility:visible;-webkit-transform:none !important;-ms-transform:none !important;transform:none !important;-webkit-transition:all .3s .3s;-o-transition:all .3s .3s;transition:all .3s .3s}@media screen and (max-width: 800px){.eael-img-accordion{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.eael-img-accordion .eael-image-accordion-hover:hover{-webkit-box-flex:1;-ms-flex:1;flex:1}.eael-img-accordion .eael-image-accordion-hover:hover .overlay{background-color:rgba(0,0,0,0)}}.rtl .eael-img-accordion{direction:ltr}
+
+.tarifario{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: white;
+    color: var(--text-color);
+    padding: 2em 1em 1em 1em ;
+
+}
+
 /* VIDEO PRINCIPAL HEADER */
 .multimedia{
     color: #4089AD;
@@ -101,27 +122,24 @@ position:sticky
     z-index: 2;
     width: auto;
 }
-.tarifario{
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    background-color: var(--main-color);
-    color: var(--text-color);
-    padding: 2em 1em 1em 1em ;
 
-}
-.botontarifario{
+.botontarifario, .botonnotas{
     display: block;
     width: 100%;
     height: 100%;
     text-decoration: none;
     margin-right: 5%;
     border-radius: 2%;
-    border: solid 2px var(--bg-color);
-    color: white;
-    background-color: black;
+    color: var(--main-color);
     padding: 0.5em 1em;
+    font-size: 18px;
+}
+.botonnotas{
+    color: white;
+    background-color: var(--main-color);
+}
+.botonnotas{
+    margin-top: -10%;
 }
 .botontarifario:hover{
     background-color: rgb(253, 253, 253);
@@ -129,20 +147,6 @@ position:sticky
 }
 .notas{
     padding-top: 10%;
-}
-.botonnotas{
-    display: block;
-    width: 80%;
-    height: 100%;
-    text-decoration: none;
-    padding-right: 15%;
-    margin-top: -60%;
-    margin-bottom: -20%;
-    border-radius: 2%;
-    border: solid 2px var(--bg-color);
-    background-color: var(--text-color);
-    color: white;
-    padding: 0.5em 1em; 
 }
 .botonnotas a{
     background-color: var(--text-color);
@@ -168,7 +172,7 @@ position:sticky
 }
 /* audiencia */
 .audiencia{
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(248, 248, 248);
     padding: 0% 0% 0% 0%;
 }
 .audiencia img{
@@ -189,18 +193,37 @@ position:sticky
 /* grupo etario */
 .grupoetario img{
     width: 100%;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 .textogrupoe{
-    padding-top: 12%;
+    padding-top: 11%;
 }
-.textogrupoe h5{
+.textogrupoe h4{
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
-    color: #1B5C9E;
+    color: var(--main-color)
+}
+.imggrafico h4, .graficosdos h4{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-color);
+    position: relative;
+    top: 5%;
+}
+.textogrupoe h5{
+    font-size: 25px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 .imggrafico img{
-    width: 50%;
+    width: 120%;
+    border-radius: 0%;
+}
+.graficosdos img{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+
 }
 /* iconos */
 .iconos h3{
@@ -271,7 +294,7 @@ position:sticky
 .notasleidas img{
     width: 110%;
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: -3%;
     transition: 0.5s;
 }
 .notasleidas img:hover{
@@ -279,8 +302,8 @@ position:sticky
 }
 .notasleidas h4{
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    color: var(--text-color);
+    font-size: 20px;
+    color: #1C8EBD;
 }
 .screen{
     margin-bottom: 15%;
@@ -294,7 +317,7 @@ position:sticky
     display: none;
 }
 .screen h2, .notasleidas h2{
-    font-size: 40px;
+    font-size: 30px;
     color:var(--main-color);
     font-family:  'Open Sans', sans-serif;
     margin-top: 5%;
@@ -323,19 +346,19 @@ position:sticky
     }
 }
 .texto h2{
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 10%;
 }
 .numero{
     color:var(--main-color);
-    font-size: 50px;
+    font-size: 40px;
 }
 .texto h3{
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10%;
 }
 .chocolaterie{
-    background-color: rgb(216, 216, 216);
+    background-color:rgb(220, 218, 218);
     font-family:  'Open Sans', sans-serif;
 }
 .chocolaterie img{
@@ -385,6 +408,9 @@ position:sticky
 .reelig iframe{
     display: none;
 }
+.acordion{
+    display: block;
+}
 /* dispositivo pequeño */
 @media(max-width: 480px){
     video {
@@ -396,6 +422,9 @@ position:sticky
         object-fit: cover;
         opacity: 100%;
         height: 250px;
+    }
+    .acordion{
+        display: none;
     }
     .tarifario{
         margin-top: -60%;
@@ -411,6 +440,28 @@ position:sticky
     .iconos i{
         margin-top: 10%;
         margin-left: 10%;
+    }
+    /* graficos */
+    .grupoetario img{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .textogrupoe{
+        padding-top: 12%;
+        margin-left: 5%;
+    }
+    .textogrupoe h5{
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        color: #1B5C9E;
+    }
+    .imggrafico img{
+        width: 100%;
+        border-radius: 0%;
+    }
+    .graficosdos img{
+        width: 90%;
+    
     }
     .likesdos{
         display: none;
