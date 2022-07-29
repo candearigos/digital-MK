@@ -414,7 +414,7 @@ position:sticky
 .responsive{
     display: none;
     width: 500%;
-    margin-left: 0%;
+    margin-left: 80%;
 }
 .desktop{
     display: block;
