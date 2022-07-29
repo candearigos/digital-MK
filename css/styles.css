@@ -411,6 +411,14 @@ position:sticky
 .acordion{
     display: block;
 }
+.responsive{
+    display: none;
+    width: 500%;
+    margin-left: -200%;
+}
+.desktop{
+    display: block;
+}
 /* dispositivo pequeño */
 @media(max-width: 480px){
     video {
@@ -423,11 +431,17 @@ position:sticky
         opacity: 100%;
         height: 250px;
     }
+    .responsive{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
     .acordion{
         display: none;
     }
     .tarifario{
-        margin-top: -60%;
+        margin-top: 0%;
     }
     .iconos h3{
       display: none;
