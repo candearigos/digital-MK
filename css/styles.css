@@ -526,6 +526,9 @@ video {
         opacity: 100%;
         height: 250px;
     }
+    .audiencia{
+        margin-top: 30%;
+    }
     .responsive{
         display: block;
     }
@@ -536,7 +539,7 @@ video {
         display: none;
     }
     .tarifario{
-        margin-top: 35%;
+        margin-top: -30%;
     }
     .iconos h3{
       display: none;
@@ -592,20 +595,6 @@ video {
         display: block;
         margin-left: 10%;
     }
-   
-    .flecha{
-        position: relative;
-        z-index: 2;
-        font-size: 100px;
-        margin-top:-40%;
-        margin-left: -40%;
-        animation-name: flecha;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-    }
-    .youtube iframe{
-        width: 100%;
-}
 .distintas a{
     margin-left: 20%;
     text-align: center;
@@ -613,12 +602,12 @@ video {
 .chocolaterie img{
     width: 100%;
     margin-left: 0%;
-    margin-bottom: 70%;
-    padding-bottom: -50%;
+    margin-bottom: 7%;
+    padding-bottom: -5%;
 }
 .chocolaterie{
-    margin-top: 5%;
-    margin-bottom: -10%;
+    margin-top: 30%;
+    margin-bottom: -1%;
 }
 .reelig iframe{
     display: block;
@@ -631,6 +620,9 @@ video {
 }
 .videotres{
   display: none;
+}
+.titulodisplay{
+    margin-top: 10%;
 }
 .quienessomos{
     margin-top: 0%;
