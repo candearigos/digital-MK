@@ -425,6 +425,22 @@ width: 120%;
 .digitalestres{
     color: var(--azulbrillante);
 }
+.diamadre{
+    margin-top: -5%;
+}
+.diamadre a{
+    padding-top: 10%;
+    margin-left: 6%;
+    text-decoration: none;
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 2px;
+    padding: 1%;
+}
+.diamadre a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
 .quienessomos h2{
     font-size: 40px;
     color:var(--main-color);
