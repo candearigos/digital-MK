@@ -23,6 +23,34 @@ body{
     /* background: linear-gradient(to bottom, #23488F, #43B4AC); */
     background-color: black;
 }
+/* fauvuismo */
+.navbar-header{
+    width: 20%;
+}
+.navbar-header img{
+    width: 80%;
+}
+nav a{
+    background-color: (156, 106, 202);
+    border-radius: 3%;  
+    color:#9E9D9D;
+    text-decoration: none;
+    padding: 3%;
+    
+}
+.logo{
+    width: 35%;
+}
+.offcanvas-end{
+    margin-right: 5%;
+}
+.offcanvas-title{
+    width: 100%;
+}
+.logoresponsive{
+    width: 70%;
+}
+/* cierre fauvismo */
 /* carousel marcas */
 
 .eael-img-accordion{display:-webkit-box;display:-ms-flexbox;display:flex;height:50vh; filter: grayscale();}.eael-img-accordion.accordion-direction-vertical{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.eael-img-accordion
@@ -46,13 +74,15 @@ body{
     transition: all 1s;
 }
 /* header */
+/* nav{
+    position: sticky;
+}
 nav a{
     background-color: (156, 106, 202);
     border-radius: 3%;  
     color:#9E9D9D;
     text-decoration: none;
     padding: 3%;
-    
 }
 .secciones li{
     font-family: 'Open Sans', sans-serif;
@@ -66,7 +96,7 @@ nav a{
 }
 .offcanvas-title{
     width: 50%;
-}
+} */
 /* VIDEO PRINCIPAL HEADER */
 .multimedia{
     color: #4089AD;
@@ -330,29 +360,6 @@ width: 120%;
 .linea{
     margin-left: 10%;
 }
-.flecha i{
-    color:var(--main-color);
-}
-.flecha{
-    position: relative;
-    z-index: 2;
-    font-size: 150px;
-    margin-top:-23%;
-    margin-left: -40%;
-    animation-name: flecha;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-@keyframes flecha{
-    0%{
-       opacity: 0%;
-       transform: translateX(0%);
-    }
-    100%{
-      opacity: 100%;
-      transform: translateX(10%);
-    }
-}
 .texto h2{
     font-size: 40px;
     margin-left: 10%;
@@ -499,6 +506,16 @@ width: 120%;
 }
 /* dispositivo pequeño */
 @media(max-width: 480px){
+    .navbar-header img{
+        width: 150%;
+    }
+    .logoresponsive{
+        width: 50%;
+    }
+    button{
+        margin-left: 90%;
+        color: white;
+    }
     video {
         position: absolute;
         top: 0;
